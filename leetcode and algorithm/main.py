@@ -15,4 +15,5 @@ def combine( n, k):
             stack.append(x)
             x += 1
             l += 1
-combine(5,3)
+    return res
+print(combine(5,3))
