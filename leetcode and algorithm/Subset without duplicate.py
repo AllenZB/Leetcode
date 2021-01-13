@@ -3,7 +3,7 @@ def subset_without_duplicate(nums):
     nums.sort()
     for i in range(len(nums)):
         if i == 0 or nums[i] != nums[i - 1]:
-            l = len(ans)
+            l = len(ans)     # if duplicate, only add the nums to the last element of ans
         for j in range(len(ans) - l, len(ans)):
             ans.append(ans[j] + [nums[i]])
     return ans
